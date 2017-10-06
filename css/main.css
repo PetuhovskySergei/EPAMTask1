@@ -65,24 +65,25 @@ header{
 }
 
 .title_first{
+    font-size: 80px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1{
     text-transform: uppercase;
     font-size: 30px;
     text-align: center;
     margin-top: 240px;
     font-weight: bold;
     color: #ffffff;
+
 }
 
-.title_first span{
+h1 span{
     color: #18cfab;
-}
-
-h1{
-    font-size: 80px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 20px;
 }
 
 .title_last{
@@ -94,7 +95,10 @@ h1{
 
 .btn{
     color: white;
+    border: none;
     border-radius: 3px;
+    font-family: Montserrat;
+    font-weight: bold;
     display: block;
     width: 165px;
     padding: 20px 0;
@@ -120,7 +124,9 @@ h1{
 }
 
 .slides{
+    position: relative;
     float: right;
+    bottom: 60px;
 }
 
 .slide{
@@ -136,8 +142,9 @@ h1{
     text-decoration: none;
     width: 22px;
     background-color: #3c4140;
-    padding: 19px 19px 19px 25px;
+    padding: 19px 41px 19px 25px;
     margin-top: 20px;
+    border: none;
 }
 
 .btn_slide:last-child{
@@ -148,11 +155,11 @@ h1{
 .block-figure{
     text-transform: uppercase;
     text-align: center;
-    padding-top: 105px;
+    padding-top: 95px;
     font-size: 20px;
     font-weight: bold;
     width: 25%;
-    height: 368px;
+    height: 280px;
     float: left;
     margin: 0;
 }
@@ -161,8 +168,8 @@ h1{
     margin-bottom: 20px;
 }
 
-.block-figure figcaption{
-    margin-top: 57px;
+.block-figure div{
+    margin-top: 37px;
 }
 
 
@@ -179,8 +186,7 @@ h1{
 }
 
 .features{
-    margin-top: 70px;
-
+    padding: 90px 0 80px 0px;
 }
 
 h2{
@@ -188,7 +194,7 @@ h2{
     font-weight: normal;
     color: #4e4e4e;
     text-align: center;
-    margin: 0 0 40px 0;
+    margin: 0 0 32px 0;
 }
 
 .Stylecopy {
@@ -200,7 +206,6 @@ h2{
     margin: 0 55px 0 0;
     width: 30%;
     float: left;
-    text-align: left;
 }
 
 .feat-item:last-child{
@@ -211,7 +216,7 @@ h2{
     float: left;
 }
 
-.feat-item article{
+.feat-item .feat-item-title{
     margin-top: 5px;
     margin-left: 20px;
     float: left;
@@ -220,8 +225,12 @@ h2{
     color: #8d8d8d;
 }
 
-.feat-item article:first-child{
+.feature-set:first-child .feat-item:first-child .feat-item-title{
     color: #18cfab;
+}
+
+.feature-set{
+    margin-top: 56px;
 }
 
 .feat-item p{
@@ -229,16 +238,15 @@ h2{
     font-size: 14px;
     font-weight: lighter;
     color: #adadad;
+    line-height: 1.8;
 }
 
 .company{
     background-color: #090f14;
-    padding-top: 100px;
-    margin-top: 80px;
-}
+    padding-top: 90px;}
 
-.company article h2{
-    margin: 0 198px 40px 0;
+.company h2{
+    margin: 0px 179px 28px 0;
     color: white;
     text-align: right;
 }
@@ -256,14 +264,14 @@ h2{
 
 .company-nav{
     float: right;
-    margin-right: 175px;
-    margin-top: 75px;
+    margin-right: 140px;
+    margin-top: 70px;
 }
 
 .company-nav .menu li{
     float: left;
     display: block;
-    margin-right: 30px;
+    margin-right: 20px;
     padding-top: 10px;
 }
 
@@ -279,16 +287,50 @@ h2{
 
 .company-nav .menu li a{
     font-weight: bold;
-}
-
-.company .company-skills img{
-    margin-top: 65px;
-    margin-right: 15px;
-    float: right;
+    font-size: 17px;
 }
 
 .company-skills{
     float: right;
+    margin-top: 45px;
+    margin-right: 15px;
+    width: 555px;
+}
+
+.company .company-skills .skills-item{
+    border: 1px solid #959595;
+    border-radius: 4px;
+    margin-top: 13px;
+}
+
+.company .company-skills .skills-item .skills-item-color{
+    padding: 11px 15px;
+    border-radius: 4px;
+    color: white;
+    text-transform: uppercase;
+    width: 370px;
+    background-color: #9c5da5;
+    font-size: 13px;
+}
+
+.company .company-skills .skills-item:nth-child(2) .skills-item-color{
+    width: 440px;
+    background-color: #11b0de;
+}
+
+.company .company-skills .skills-item:nth-child(3) .skills-item-color{
+    width: 340px;
+    background-color: #d67f7f;
+}
+
+.company .company-skills .skills-item:nth-child(4) .skills-item-color{
+    width: 470px;
+    background-color: #20bc9d;
+}
+
+.company .company-skills .skills-item:nth-child(5) .skills-item-color{
+    width: 440px;
+    background-color: #bb8a36;
 }
 
 .img-company{
@@ -298,11 +340,11 @@ h2{
 
 .work{
     background-color: #f8fcfe;
-    padding: 100px 0 100px 0;
+    padding: 95px 0;
 }
 
 .work-nav-gap{
-    margin-top: 70px;
+    margin-top: 63px;
 }
 
 .work .work-nav {
@@ -310,24 +352,23 @@ h2{
     margin: 0 auto;
 }
 
-.work-nav .menu li {
+.work .work-nav .menu button {
     float: left;
     display: block;
-    padding: 18px 15px;
+    padding: 18px 22px;
     border: 1px solid #ebebeb;
     border-left: none;
+    background-color: white;
+    color: #717171;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 500;
 }
 
-.work-nav .menu li:first-child {
+.work .work-nav .menu button:first-child {
     border-top: 1px solid #18cfab;
     border-left: 1px solid #ebebeb;
-}
-
-.work-nav .menu li a{
-    color: #717171;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
+    color: #18cfab;
 }
 
 .work-table{
@@ -390,12 +431,13 @@ h2{
 .services .services-nav {
     width: 1140px;
     margin-top: 70px;
+    margin-bottom: 25px;
 }
 
 .services .menu li {
     display: block;
     float: left;
-    padding: 23px 46px;
+    padding: 25px 46px;
     border: 1px solid #ebebeb;
     border-left: none;
     background-color: #f8fcfe;
@@ -403,6 +445,19 @@ h2{
 
 .services .menu li:first-child {
     background-color: #18cfab;
+    position: relative;
+}
+
+.services .menu li:first-child:before {
+    content:"";
+    position: absolute;
+    top: 100%;
+    right: calc(50% - 12px);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #18cfab;
+    border-right: 10px solid transparent;
 }
 
 .services .menu li a{
@@ -417,14 +472,9 @@ h2{
     color: white;
 }
 
-.rec{
-    float: left;
-    margin-left: 80px;
-}
-
 .services-desc img{
     background-color: #4e4e4e;
-    width: 195px;
+    width: 175px;
     height: 138px;
     float: left;
     margin-right: 18px;
@@ -439,11 +489,10 @@ h2{
 
 .install{
     background-color: #40474b;
-    padding-top: 130px;
-    padding-bottom: 127px;
+    padding:130px 0;
 }
 
-.install .title_first{
+.install h1{
     color: #18cfab;
     margin: 0;
     font-size: 40px;
@@ -452,12 +501,12 @@ h2{
 .install .title_last{
     font-size: 16px;
     font-weight: 500;
-    margin-top: 35px;
+    margin-top: 20px;
     margin-bottom: 78px;
 }
 
 .news{
-    padding: 100px 0 100px 0;
+    padding: 90px 0;
 
 }
 
@@ -478,6 +527,12 @@ h2{
     background-image:url("../img/ImageNews.png");
     width: 263px;
     height: 229px;
+}
+
+.news-item-img img{
+    width: 263px;
+    height: 229px;
+    display: block;
 }
 
 .news-date{
@@ -506,7 +561,7 @@ h2{
     max-width: 265px;
     background-color: #f8fcfe;
     padding-left: 15px;
-    padding-top: 13px;
+    padding-top: 10px;
 }
 
 .news-title{
@@ -514,7 +569,7 @@ h2{
     font-size: 18px;
     font-weight: bold;
     color: #8c8d8d;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .news-mod{
@@ -529,36 +584,38 @@ h2{
 }
 
 .news-lots{
-    margin-top: 70px;
+    margin-top: 65px;
 }
 
 .news-lots2{
-    margin-top: 28px;
+    margin-top: 15px;
 }
 
-.fun figure figcaption{
+.fun .block-figure{
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.fun .block-figure div{
     color: white;
     font-size: 36px;
     font-weight: lighter;
     text-transform: none;
+    margin-top: 10px;
 }
 
-.fun figure:nth-child(even){
+.fun .block-figure:nth-child(even){
     border-top: 7px solid #25333c;
 }
 
-.fun figure:nth-child(odd) figcaption p{
+.fun .block-figure:nth-child(odd) div p{
     color: #18cfab;
     font-size: 18px;
 }
 
-.fun figure:nth-child(even) figcaption p{
+.fun .block-figure:nth-child(even) div p{
     color: #25333c;
     font-size: 18px;
-}
-
-.fun figure figcaption{
-    margin-top: 25px;
 }
 
 .price-column{
@@ -613,7 +670,7 @@ h2{
 
 .price-column-btn{
     height: 75px;
-    padding-top: 25px;
+    padding-top: 10px;
     border: 1px solid #e1e1e1;
     border: none;
 }
@@ -642,7 +699,7 @@ h2{
     padding: 100px 0px;
 }
 
-.feedback article h2{
+.feedback h2{
     color: white;
 }
 
